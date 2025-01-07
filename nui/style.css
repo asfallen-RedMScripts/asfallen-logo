@@ -1,0 +1,53 @@
+.logo-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    animation: oldwest 6s ease-in-out infinite;
+    filter: drop-shadow(0 0 2px rgba(139, 69, 19, 0.3));
+    transform-origin: center;
+    border: 2px solid rgba(139, 69, 19, 0.4);
+}
+
+
+@keyframes oldwest {
+    0% {
+        opacity: 0.85;
+        filter: sepia(20%) drop-shadow(0 0 2px rgba(139, 69, 19, 0.2));
+    }
+    50% {
+        opacity: 1;
+        filter: sepia(10%) drop-shadow(0 0 3px rgba(139, 69, 19, 0.4));
+    }
+    100% {
+        opacity: 0.85;
+        filter: sepia(20%) drop-shadow(0 0 2px rgba(139, 69, 19, 0.2));
+    }
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes doubleSpin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(720deg); 
+    }
+} 
